@@ -155,7 +155,13 @@ footer h2 {
     .content{
         display: block;
         width: auto;
-        margin-right: 20px;
+        margin: 0;
+        
+    }
+
+    .content-item{
+        padding: 20px;
+        margin: 20px;
     }
 
     .benefits{
@@ -167,11 +173,10 @@ footer h2 {
 }
 
 @media screen and (max-width:480px){
+    
     .content img{
         float: none;
         width: 100%;
         margin: 0;
-        
-        
     }
 }

@@ -54,7 +54,7 @@ p {
 /*Hero style landing page*/
 .hero {
     height: 800px;
-    width: 100%;
+    /*width: 100%;*/
     margin-bottom: 25px;
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
@@ -62,11 +62,6 @@ p {
     
 }
 
-.clearfix::after{
-    content: "";
-    display:block;
-    clear:both;
-}
 .float-left {
     float: left;
     margin-right: 25px;
@@ -75,6 +70,13 @@ p {
 .float-right {
     float: right;
     margin-left: 25px;
+}
+
+/* helps clear the contect-item*/
+.clearfix::after{
+    content: "";
+    display:block;
+    clear:both;
 }
 
 .content {
@@ -147,12 +149,14 @@ footer h2 {
 @media screen and (max-width: 1010px){
     nav div {
         float:left;
-        padding-left:0;
     }
 }
 
-@media screen and (max-width:800px){
-
+@media screen and (max-width:810px){
+    nav div {
+        float:left;
+        
+    }
     .content{
         display: block;
         width: auto;

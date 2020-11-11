@@ -7,7 +7,7 @@
 body {
     background-color: #d9dcd6;
 }
-/*  HEADER */
+/*  NAVBAR-START */
 nav {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -20,7 +20,7 @@ nav h1 {
     font-size: 48px;
 }
 
-nav h1 .seo {
+nav h1 #seo {
     color: #d9dcd6;
 }
 
@@ -29,9 +29,7 @@ nav div {
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    
-    
+    font-size: 20px; 
 }
 
 nav div ul {
@@ -42,19 +40,12 @@ nav div ul li {
     display: inline-block;
     margin-left: 25px;
 }
-/*LINKS*/
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
-/*Paragraphs*/
-p {
-    font-size: 16px;
-}
-/*Hero style landing page*/
-.hero {
+/*NAVBAR-END*/
+
+/*BACKGROUND IMAGE*/
+#hero {
     height: 800px;
-    /*width: 100%;*/
+    width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
@@ -62,23 +53,17 @@ p {
     
 }
 
-.float-left {
-    float: left;
-    margin-right: 25px;
+/*LINKS*/
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+/*PARAGRAPHS*/
+p {
+    font-size: 16px;
 }
 
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-
-/* helps clear the contect-item*/
-.clearfix::after{
-    content: "";
-    display:block;
-    clear:both;
-}
-
+/*MAIN CONTENT START*/
 .content {
     width: 75%;
     display: inline-block;
@@ -88,7 +73,7 @@ p {
 .content-item {
     margin-bottom: 20px;
     padding: 50px;
-    height: auto;
+    height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
@@ -103,7 +88,9 @@ p {
     margin-bottom: 20px;
     font-size: 36px;
 }
+/*MAIN CONTENT END*/
 
+/*SIDE BAR START*/
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -131,6 +118,7 @@ p {
     margin: 10px auto;
     max-width: 150px;
 }
+/*SIDEBAR END*/
 
 /*  FOOTER */
 footer {
@@ -144,44 +132,14 @@ footer h2 {
     font-size: 20px;
 }
 
-
-/*Media Queries*/
-@media screen and (max-width: 1010px){
-    nav div {
-        float:left;
-    }
+/*STYLING CLASSES START*/
+.float-left {
+    float: left;
+    margin-right: 25px;
 }
 
-@media screen and (max-width:810px){
-    nav div {
-        float:left;
-        
-    }
-    .content{
-        display: block;
-        width: auto;
-        margin: 0;
-        
-    }
-
-    .content-item{
-        padding: 20px;
-        margin: 20px;
-    }
-
-    .benefits{
-        display: block;
-        width: auto;
-        margin-left: 20px;
-    }
-
+.float-right {
+    float: right;
+    margin-left: 25px;
 }
-
-@media screen and (max-width:480px){
-    
-    .content img{
-        float: none;
-        width: 100%;
-        margin: 0;
-    }
-}
+/*STYLING CLASSES END*/
